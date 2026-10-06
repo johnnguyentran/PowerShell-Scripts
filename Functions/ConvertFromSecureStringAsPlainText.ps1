@@ -13,3 +13,7 @@ Function ConvertFrom-SecureString-AsPlainText{
 [System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
     $PlainTextString;
 }
+
+<#
+$Varriable = ConvertFrom-SecureString-AsPlainText -SecureString (get-content <PathToTxtKey>\<Credential>.txt | convertto-securestring)
+#>
